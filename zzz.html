@@ -6,63 +6,37 @@
     <title>Document</title>
     <style>
       .container {
-        justify-content: center;
-        align-items: center;
-        border: 5px solid black;
-        display: flex;
-        height: 400px;
-        width: 1200px;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.5fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
       }
 
-      .container > div {
-        width: 200px;
-        color: white;
-        height: 200px;
-        font-size: larger;
+      .item {
+        font-size: 5rem;
+        border: 1px solid black;
         display: flex;
         align-items: center;
         justify-content: center;
       }
-
-      .box-1 {
-        background-color: red;
-        align-items: flex-start;
+      .laptop {
+        background-color: #007bff;
       }
-
-      .box-2 {
-        background-color: green;
-        align-items: flex-start;
+      .calendar {
+        background-color: #28a745;
       }
-
-      .box-3 {
-        background-color: rgb(230, 230, 28);
-        align-items: flex-start;
-      }
-
-      .box-4 {
-        background-color: blue;
-        align-items: flex-start;
-      }
-
-      .box-5 {
-        background-color: blueviolet;
-        align-items: flex-start;
-      }
-
-      .box-6 {
-        background-color: rgb(27, 161, 143);
-        align-items: flex-start;
+      .book {
+        background-color: #dc3545;
       }
     </style>
   </head>
+
   <body>
     <div class="container">
-      <div class="box-1">1</div>
-      <div class="box-2">2</div>
-      <div class="box-3">3</div>
-      <div class="box-4">4</div>
-      <div class="box-5">5</div>
-      <div class="box-6">6</div>
+      <div class="item laptop">:computer: Click to learn more</div>
+      <div class="item calendar">:calendar_spiral: Click to learn more</div>
+      <div class="item book">:book: Click to learn more</div>
     </div>
   </body>
 </html>
